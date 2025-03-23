@@ -10,7 +10,8 @@
     "lint": "next lint",
     "export": "next build",
     "deploy": "npm run build && touch out/.nojekyll && cp CNAME out/ && cp public/index.html out/ && gh-pages -d out --dotfiles",
-    "manual-deploy": "npm run build && cd out && touch .nojekyll && cp ../CNAME . && git init && git add -A && git commit -m 'Deploy to GitHub Pages' && git push -f git@github.com:RameezDevZone/IslamicHistory.git main:gh-pages"
+    "manual-deploy": "npm run build && cd out && touch .nojekyll && cp ../CNAME . && git init && git add -A && git commit -m 'Deploy to GitHub Pages' && git push -f git@github.com:RameezDevZone/IslamicHistory.git main:gh-pages",
+    "readme-deploy": "mkdir -p dist && cp README.md dist/index.md && cp CNAME dist/ && touch dist/.nojekyll && gh-pages -d dist"
   },
   "dependencies": {
     "next": "^14.0.1",
@@ -22,6 +23,7 @@
     "eslint": "^8.52.0",
     "eslint-config-next": "^14.0.1",
     "gh-pages": "^6.3.0",
+    "next-export-optimize-images": "^4.6.2",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.5"
   },
