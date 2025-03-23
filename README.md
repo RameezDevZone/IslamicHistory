@@ -1,74 +1,151 @@
-<a href="https://themes.3rdwavemedia.com/bootstrap-templates/popular/devblog-free-bootstrap-4-blog-template-for-developers/" target="_blank"><img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/02/Bootstrap-Blog-Template-DevBlog-Pormo.jpg" alt="Bootstrap 4 Blog Template for Developers" /></a>
+# Malayalam Islamic History
 
-## Theme Details & Demo
+A Next.js web application showcasing Islamic stories, categorized into Quran Stories, Prophet Stories, Khaleefa Stories, and Swahabi Stories.
 
-**Demo:** https://themes.3rdwavemedia.com/bootstrap-templates/popular/devblog-free-bootstrap-4-blog-template-for-developers/
-
-DevBlog is a **free Bootstrap blog template** made for developers. It provides a great reading experience for desktop and mobile users. Comes with 8 hand-picked colour schemes, you can easily customise the theme colour/styling via the source SCSS files.
-
-Blogging is a great way for developers to share their ideas and promote their work or side projects. This template can help you set up a professional-looking blog in no time. No need to rely on a third-party blogging platform – get all the traffic to your own site instead. Want to get your blog online and start building your audience? Don’t miss this template!
-
-## Author & License
-
-This Bootstrap template is made by UX/UI designer [Xiaoying Riley](https://twitter.com/3rdwave_themes) for developers and is 100% FREE under the [Creative Commons Attribution 3.0 License (CC BY 3.0)](http://creativecommons.org/licenses/by/3.0/)
-
-If you'd like to **use the template without the attribution**, you can [buy the **commercial license** via the theme website](https://themes.3rdwavemedia.com/bootstrap-templates/popular/devblog-free-bootstrap-4-blog-template-for-developers/)
-
-#### Follow Xiaoying
-
-[Twitter](https://twitter.com/3rdwave_themes)
-
-[Facebook](https://www.facebook.com/3rdwavethemes/)
-
-[Dribbble](https://dribbble.com/Xiaoying)
-
-[Medium](https://medium.com/@3rdwave_themes)
-
-[Linkedin](https://uk.linkedin.com/in/xiaoying)
-
-
-## Latest Version
-**v1.1** - 12 Feb 2019
-
-[Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/popular/devblog-free-bootstrap-4-blog-template-for-developers/?target=changelog)
-
-## Colour Schemes
-
-#### Colour 1 (theme-1.css)
-<img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/02/devblog-theme-1.jpg" width="400" alt="DevBlog color 1" />
-
-#### Colour 2 (theme-2.css)
-<img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/02/devblog-theme-2.jpg" width="400" alt="DevBlog color 2" />
-
-#### Colour 3 (theme-3.css)
-<img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/02/devblog-theme-3.jpg" width="400" alt="DevBlog color 3" />
-
-#### Colour 4 (theme-4.css)
-<img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/02/devblog-theme-4.jpg" width="400" alt="DevBlog color 4" />
-
-#### Colour 5 (theme-5.css)
-<img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/02/devblog-theme-5.jpg" width="400" alt="DevBlog color 5" />
-
-#### Colour 6 (theme-6.css)
-<img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/02/devblog-theme-6.jpg" width="400" alt="DevBlog color 6" />
-
-#### Colour 7 (theme-7.css)
-<img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/02/devblog-theme-7.jpg" width="400" alt="DevBlog color 7" />
-
-#### Colour 8 (theme-8.css)
-<img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/02/devblog-theme-8.jpg" width="400" alt="DevBlog color 8" />
+## Website
+[www.islamichistory.in](https://www.islamichistory.in)
 
 ## Features
 
--  Fully Responsive
--  HTML5 + CSS3
--  Built on Bootstrap 4
--  **SCSS** source files included
--  8 Colour Schemes
--  1000+ FontAwesome 5 icons
--  Compatible with all modern browsers
+- **Responsive Design**: Works on mobile, tablet, and desktop devices
+- **Dark Mode Support**: Toggle between light and dark themes
+- **Accessibility Features**: High contrast mode, font size adjustments, and more
+- **Story Categories**: Organized into 4 main categories
+- **Search Functionality**: Search across all stories by title, description, content, and tags
+- **Keyboard Shortcuts**: Navigation and accessibility features via keyboard shortcuts
+- **Footer with Copyright**: Includes a comprehensive footer with DHIL Tech copyright
 
-## Credits
-- [Bootstrap](https://getbootstrap.com/)
-- [FontAwesome](https://fortawesome.github.io/Font-Awesome/)
-- [Highlight.js](https://highlightjs.org/)
+## Tech Stack
+
+- **Framework**: Next.js 13+ (App Router)
+- **Styling**: Tailwind CSS
+- **State Management**: React Context API
+- **Deployment**: Ready for Vercel deployment
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/dhiltech/islamic-history.git
+   cd islamic-history
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Create required directories:
+   ```bash
+   mkdir -p public/images
+   ```
+
+4. Add images for stories in the `/public/images` directory with filenames matching those referenced in the story data files:
+   - `/public/images/quran001.jpg`, `/public/images/quran002.jpg`, etc.
+   - `/public/images/prophet001.jpg`, `/public/images/prophet002.jpg`, etc.
+   - `/public/images/khaleefa001.jpg`, `/public/images/khaleefa002.jpg`, etc.
+   - `/public/images/swahabi001.jpg`, `/public/images/swahabi002.jpg`, etc.
+   - `/public/images/placeholder.png` (fallback image)
+
+### Development
+
+Run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+### Building for Production
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+### Running in Production
+
+```bash
+npm start
+# or
+yarn start
+```
+
+## Project Structure
+
+```
+islamic-history/
+├── app/                      # Next.js App Router
+│   ├── components/           # Reusable components
+│   │   └── Footer.js         # Site footer with copyright
+│   ├── context/              # React Context providers
+│   ├── data/                 # Story data files
+│   │   ├── quranStories.js   # Quran stories data
+│   │   ├── prophetStories.js # Prophet stories data
+│   │   ├── khaleefaStories.js# Khaleefa stories data
+│   │   ├── swahabiStories.js # Swahabi stories data
+│   │   └── stories.js        # Combined stories for backward compatibility
+│   ├── utils/                # Utility functions
+│   ├── [category]-stories/   # Dynamic routes for story categories
+│   │   └── [id]/             # Dynamic routes for individual stories
+│   ├── layout.js             # Root layout with metadata
+│   ├── ClientLayout.js       # Client-side layout with UI controls
+│   ├── page.js               # Home page
+│   └── globals.css           # Global styles
+├── public/                   # Static files
+│   └── images/               # Story images
+└── next.config.js            # Next.js configuration
+```
+
+## Keyboard Shortcuts
+
+- `Alt+1`: Toggle dark mode
+- `Alt+2`: Toggle high contrast mode
+- `Alt+3`: Increase font size
+- `Alt+4`: Decrease font size
+- `Alt+5`: Reset font size
+- `Alt+6`: Toggle dyslexia friendly font
+- `Alt+0`: Reset all settings
+- `Alt+h`: Toggle help dialog
+
+## Customization
+
+### Adding New Stories
+
+1. Add new story data to the appropriate file in `app/data/` directory
+2. Place corresponding images in the `public/images/` directory
+
+### Modifying Themes
+
+Adjust theme variables in `app/globals.css` to customize colors, fonts, and other styling elements.
+
+## License
+
+[MIT License](LICENSE)
+
+## Copyright
+
+© 2024 DHIL Tech. All rights reserved.
+
+## Contact
+
+For any inquiries, please contact us at [info@islamichistory.in](mailto:info@islamichistory.in)
+
+## Acknowledgements
+
+- All stories are from Islamic history and literature
+- Font Awesome for icons
+- OpenDyslexic font for accessibility 
