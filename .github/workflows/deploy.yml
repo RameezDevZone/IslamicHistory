@@ -26,10 +26,10 @@ jobs:
 
       - name: Build and Export 🏗️
         run: npm run build
-        
-      - name: List output directory
-        run: ls -la out/
 
+      - name: List output directory structure
+        run: find out -type f | sort
+        
       - name: Add .nojekyll file 📄
         run: touch out/.nojekyll
 
@@ -41,8 +41,11 @@ jobs:
           if [ ! -f out/index.html ]; then
             cp public/index.html out/
           fi
+          
+      - name: Check if out/index.html exists
+        run: cat out/index.html || echo "index.html not found!"
 
-      - name: Deploy 🚀
+      - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: out

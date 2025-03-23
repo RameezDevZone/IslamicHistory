@@ -6,16 +6,6 @@ import Link from 'next/link'
 import Navigation from '../../components/Navigation'
 import { prophetStories } from '../../data/stories'
 
-// Add generateStaticParams for static export
-export async function generateStaticParams() {
-  // Import prophetStories directly here to avoid client/server mismatch
-  const { prophetStories } = await import('../../data/prophetStories')
-  
-  return prophetStories.map((story) => ({
-    id: story.id,
-  }))
-}
-
 export default function ProphetStoryPage() {
   const { id } = useParams()
   

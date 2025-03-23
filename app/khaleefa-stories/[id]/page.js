@@ -6,16 +6,6 @@ import Link from 'next/link'
 import Navigation from '../../components/Navigation'
 import { khaleefaStories } from '../../data/stories'
 
-// Add generateStaticParams for static export
-export async function generateStaticParams() {
-  // Import khaleefaStories directly here to avoid client/server mismatch
-  const { khaleefaStories } = await import('../../data/khaleefaStories')
-  
-  return khaleefaStories.map((story) => ({
-    id: story.id,
-  }))
-}
-
 export default function KhaleefaStoryPage() {
   const { id } = useParams()
   

@@ -8,16 +8,6 @@ import SEO from '../../components/SEO'
 import { quranStories } from '../../data/stories'
 import { useState } from 'react'
 
-// Add generateStaticParams for static export
-export async function generateStaticParams() {
-  // Import quranStories directly here to avoid client/server mismatch
-  const { quranStories } = await import('../../data/quranStories')
-  
-  return quranStories.map((story) => ({
-    id: story.id,
-  }))
-}
-
 export default function StoryPage() {
   const { id } = useParams()
   const [imageError, setImageError] = useState(false)
