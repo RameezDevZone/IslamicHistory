@@ -106,7 +106,7 @@ export default function StoryListing() {
                 <div className="flex justify-between items-center">
                   <span className="text-sm text-gray-500">{story.date}</span>
                   <Link
-                    href={`/${story.category}-stories/${story.id}`}
+                    href={`/${story.category}/${story.id}`}
                     className="text-primary hover:text-primary-dark font-medium"
                   >
                     Read More →
@@ -120,7 +120,7 @@ export default function StoryListing() {
         {/* View All Link */}
         <div className="text-center mt-8">
           <Link
-            href={`/${activeTab}-stories`}
+            href={`/${activeTab}`}
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-dark transition-colors duration-200"
           >
             View All {tabs.find(tab => tab.id === activeTab)?.label}
