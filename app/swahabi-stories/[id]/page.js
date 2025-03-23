@@ -7,6 +7,16 @@ import Navigation from '../../components/Navigation'
 import { swahabiStories } from '../../data/stories'
 import { useState } from 'react'
 
+// Add generateStaticParams for static export
+export async function generateStaticParams() {
+  // Import swahabiStories directly here to avoid client/server mismatch
+  const { swahabiStories } = await import('../../data/swahabiStories')
+  
+  return swahabiStories.map((story) => ({
+    id: story.id,
+  }))
+}
+
 export default function SwahabiStoryPage() {
   const params = useParams()
   const storyId = params.id

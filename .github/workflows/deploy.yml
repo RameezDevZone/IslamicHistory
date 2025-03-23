@@ -26,15 +26,25 @@ jobs:
 
       - name: Build and Export 🏗️
         run: npm run build
+        
+      - name: List output directory
+        run: ls -la out/
 
       - name: Add .nojekyll file 📄
         run: touch out/.nojekyll
 
       - name: Copy CNAME file 📋
         run: cp CNAME out/
+        
+      - name: Copy index.html if it doesn't exist
+        run: |
+          if [ ! -f out/index.html ]; then
+            cp public/index.html out/
+          fi
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: out
-          branch: gh-pages 
+          branch: gh-pages
+          clean: true 

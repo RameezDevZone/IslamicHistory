@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next build",
-    "deploy": "next build && touch out/.nojekyll && cp CNAME out/ && gh-pages -d out --dotfiles"
+    "deploy": "npm run build && touch out/.nojekyll && cp CNAME out/ && cp public/index.html out/ && gh-pages -d out --dotfiles",
+    "manual-deploy": "npm run build && cd out && touch .nojekyll && cp ../CNAME . && git init && git add -A && git commit -m 'Deploy to GitHub Pages' && git push -f git@github.com:RameezDevZone/IslamicHistory.git main:gh-pages"
   },
   "dependencies": {
     "next": "^14.0.1",

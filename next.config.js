@@ -1,14 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  experimental: {
-    appDir: true,
-  },
   images: {
     domains: ['placeholder.com', 'via.placeholder.com', 'placehold.co'],
     unoptimized: true,
   },
   output: 'export',
+  trailingSlash: true,
   async redirects() {
     return [
       {
