@@ -1,0 +1,22 @@
+name: Islamic History
+title: Islamic History
+description: A Next.js web application showcasing Islamic stories from the Quran, Prophet, Khaleefa, and Swahabi categories
+
+# GitHub Pages settings
+baseurl: ""
+url: "https://www.islamichistory.in"
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-cayman
+
+plugins:
+  - jekyll-redirect-from
+
+# Default layout
+defaults:
+  -
+    scope:
+      path: "" # Apply to all files
+    values:
+      layout: "default" 
