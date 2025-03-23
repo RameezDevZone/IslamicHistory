@@ -3,7 +3,6 @@
 import { useEffect } from 'react'
 import { useRouter, useParams } from 'next/navigation'
 
-// Remove generateStaticParams from client component
 export default function OtherStoryRedirect() {
   const router = useRouter()
   const { id } = useParams()
