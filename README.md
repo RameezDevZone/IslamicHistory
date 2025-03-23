@@ -84,6 +84,45 @@ npm start
 yarn start
 ```
 
+## Deployment to GitHub Pages
+
+### Automatic Deployment (GitHub Actions)
+
+This repository is configured to automatically deploy to GitHub Pages when changes are pushed to the main branch. The deployment process is handled by a GitHub Actions workflow:
+
+1. Push your changes to the main branch
+2. GitHub Actions will automatically:
+   - Build the Next.js application
+   - Export static files
+   - Deploy to the gh-pages branch
+   - Make the site available at https://[username].github.io/IslamicHistory
+
+### Manual Deployment
+
+To manually deploy the application to GitHub Pages:
+
+1. Install development dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Build and deploy the application:
+   ```bash
+   npm run deploy
+   ```
+
+3. The site will be deployed to the gh-pages branch and available at https://[username].github.io/IslamicHistory
+
+### First-time Setup
+
+If you're setting up GitHub Pages for the first time:
+
+1. Ensure your repository has a gh-pages branch (created automatically by the deployment process)
+2. Go to your repository settings → Pages
+3. Set the Source to "Deploy from a branch"
+4. Select the gh-pages branch and set the folder to / (root)
+5. Save the settings
+
 ## Project Structure
 
 ```
