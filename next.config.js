@@ -9,9 +9,6 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/IslamicHistory' : '',
-  // Optional: Set the assetPrefix if needed for production
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/IslamicHistory' : '',
   async redirects() {
     return [
       {

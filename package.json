@@ -8,8 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build && next export",
-    "deploy": "next build && next export && touch out/.nojekyll && gh-pages -d out --dotfiles"
+    "export": "next build",
+    "deploy": "next build && touch out/.nojekyll && cp CNAME out/ && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "next": "^14.0.1",
